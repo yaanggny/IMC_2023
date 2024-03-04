@@ -216,6 +216,32 @@ create_submission(out_results, data_dict)
 ```
 
 ## 重要参考
+### 其他提交
 - https://www.kaggle.com/code/zhongwenhao/imc-2023-baseline-hloc 借助[hloc](https://github.com/cvg/Hierarchical-Localization/)实现SP+SG, LoFTR
 - https://www.kaggle.com/code/maxchen303/imc2023-final-pub 包含获取基础矩阵、评估
 - https://github.com/ubc-vision/image-matching-benchmark-baselines  local features
+- https://www.kaggle.com/code/alexanderveicht/imc2023-from-repo 自定义代码实现并导入(sys.path.append)，导入自己的仓库
+
+### 数据分析
+- https://www.kaggle.com/code/leonidkulyk/eda-imc-3d-plots-interactive-vis#(%E0%B2%A0%E0%B2%BF%E2%81%A0_%E2%81%A0%E0%B2%A0)-Overview
+- https://www.kaggle.com/code/eduardtrulls/imc2023-training-data  3D交互可视化
+
+```bash
+# 3D可视化
+git clone --quiet --recursive https://github.com/cvg/Hierarchical-Localization/
+cd Hierarchical-Localization
+pip install -e .    
+
+pip install mediapy  # 可视化多个图片
+```
+
+```py
+from hloc import extract_features, match_features, reconstruction, visualization, pairs_from_exhaustive
+from hloc.visualization import plot_images, read_image
+from hloc.utils import viz_3d
+```
+
+### 特征提取匹配demo
+- https://github.com/ducha-aiki/imc2023-kornia-starter-pack  Simple jupyter notebook for 3D reconstruction using kornia and pycolmap(DISK, KeyNetAffNetHardNet, LoFTR)
+- https://www.kaggle.com/models/jiamingsuen/loftr/frameworks/pyTorch/variations/outdoor
+- https://www.kaggle.com/models/jatentaki/disk/frameworks/PyTorch/variations/depth-supervision/versions/1
