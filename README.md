@@ -221,6 +221,8 @@ create_submission(out_results, data_dict)
 - https://www.kaggle.com/code/maxchen303/imc2023-final-pub 包含获取基础矩阵、评估
 - https://github.com/ubc-vision/image-matching-benchmark-baselines  local features
 - https://www.kaggle.com/code/alexanderveicht/imc2023-from-repo 自定义代码实现并导入(sys.path.append)，导入自己的仓库
+- https://www.kaggle.com/competitions/image-matching-challenge-2023/discussion/416873 第二名方法总结
+- https://www.kaggle.com/code/mukit0/superpoint-imc2023-2nd-position
 
 ### 数据分析
 - https://www.kaggle.com/code/leonidkulyk/eda-imc-3d-plots-interactive-vis#(%E0%B2%A0%E0%B2%BF%E2%81%A0_%E2%81%A0%E0%B2%A0)-Overview
